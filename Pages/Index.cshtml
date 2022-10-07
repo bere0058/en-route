@@ -1,0 +1,49 @@
+﻿@page
+@model Youtuber
+@{
+    ViewData["Title"] = "Home page";
+    var jpg = ".jpg";
+    var categoryId = 0;
+    var active = "";
+}
+
+<main class="text-center" style="background-image: url(/img/full/bg.jpg);">
+    <section class="bg-dark bg-opacity-50">
+        <section class="d-flex flex-column justify-content-center titles px-3">
+            <h1 class="display-3 text-white fw-bold">En Route</h1>
+            <p class="text-white">Découvre le Japon grâce à ces youtubeurs</p>
+        </section>
+        <section class="d-flex img-section align-items-center mx-auto yt">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    @foreach (var Youtuber in @Model.youtubers)
+                    {
+                        if (categoryId == 0)
+                        {
+                            active = "active";
+                        }
+                        else
+                        {
+                            active = "";
+                        };
+                        <a asp-page="/yt" class="carousel-item @active" asp-route-youtuber="@Youtuber.getName()">
+                            <img class="w-100" src="/img/front/@Youtuber.getName()@jpg" alt="">
+                            <p class="w-50 position-absolute top-50 start-50 translate-middle bg-black bg-opacity-50 text-white">@Youtuber.getName()</p>
+                        </a>
+                        categoryId++;
+                    }
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </section>
+</main>

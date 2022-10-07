@@ -1,0 +1,87 @@
+h1, .url-btn {
+    color: white;
+}
+img {
+    width: 100%;
+}
+.front-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.div-title {
+    margin-top: 10%;
+}
+.url-btn {
+    background-color: rgba(253, 48, 33, 0.719);
+}
+.article-div {
+    padding: 2% 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.article-div > div {
+    width: 50%;
+}
+.article-text-div {
+    position: relative;
+    margin-left: 5%;
+}
+.text-category {
+    text-align: justify;
+}
+
+/* Background of playlist collections */
+
+.\30 {
+    background-color: #f5bc8ac9;
+}
+.\31 {
+    background-color: #d82f29ab;
+}
+.\32 {
+    background-color: #f77d37ab;
+}
+.Louis-San-\30 {
+    background-color: #fa843fab;
+}
+.Louis-San-\31 {
+    background-color: black;
+    color: rgba(245, 245, 245, 0.829);
+}
+.Louis-San-\32 {
+    background-color: #11354d;
+    color: rgba(245, 245, 245, 0.829);
+}
+.Ichiban-Japan-\31 {
+    background-color: #b1bda3;
+}
+.Tev-Ici-Japon-\30 {
+    background-color: #d82f29ab;
+}
+.Tev-Ici-Japon-\31 {
+    background-color: #93d2c8;
+}
+.Tev-Ici-Japon-\32 {
+    color: rgba(245, 245, 245, 0.829);
+    background-color: #4b3526;
+}
+
+/* Media queries*/
+@media (max-width: 768px) {
+    .article-div {
+        flex-direction: column;
+    }
+    .article-div > div {
+        width: 100%;
+    }
+    .article-text-div {
+        transform: none;
+        top: auto;
+        margin-left: 0;
+        padding: 5% 0;
+    }
+    .carousel-control-next, .carousel-control-prev {
+        width: 10%;
+    }
+  }

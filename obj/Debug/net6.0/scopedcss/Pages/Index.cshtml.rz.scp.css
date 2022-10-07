@@ -1,0 +1,28 @@
+main[b-ofhbw4k5b6], main>section[b-ofhbw4k5b6] {
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+.img-section[b-ofhbw4k5b6] {
+    width: 25%;
+}
+.titles[b-ofhbw4k5b6] {
+    height: 30vh;
+}
+.yt[b-ofhbw4k5b6] {
+    height: 70vh;
+}
+
+/* Media queries*/
+
+@media (max-width: 768px) {
+    .img-section[b-ofhbw4k5b6] {
+        width: 40%;
+    }
+  }
+@media (max-width: 448px) {
+    .img-section[b-ofhbw4k5b6] {
+        width: 70%;
+    }
+  }

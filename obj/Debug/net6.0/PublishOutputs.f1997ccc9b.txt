@@ -1,0 +1,7 @@
+C:\Users\ccusg\Documents\Code\enroute\bin\Debug\net6.0\publish\enroute.exe
+C:\Users\ccusg\Documents\Code\enroute\bin\Debug\net6.0\publish\appsettings.Development.json
+C:\Users\ccusg\Documents\Code\enroute\bin\Debug\net6.0\publish\appsettings.json
+C:\Users\ccusg\Documents\Code\enroute\bin\Debug\net6.0\publish\enroute.dll
+C:\Users\ccusg\Documents\Code\enroute\bin\Debug\net6.0\publish\enroute.deps.json
+C:\Users\ccusg\Documents\Code\enroute\bin\Debug\net6.0\publish\enroute.runtimeconfig.json
+C:\Users\ccusg\Documents\Code\enroute\bin\Debug\net6.0\publish\enroute.pdb

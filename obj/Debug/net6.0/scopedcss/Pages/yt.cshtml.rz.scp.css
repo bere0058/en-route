@@ -1,0 +1,87 @@
+h1[b-zlo67wj70z], .url-btn[b-zlo67wj70z] {
+    color: white;
+}
+img[b-zlo67wj70z] {
+    width: 100%;
+}
+.front-section[b-zlo67wj70z] {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.div-title[b-zlo67wj70z] {
+    margin-top: 10%;
+}
+.url-btn[b-zlo67wj70z] {
+    background-color: rgba(253, 48, 33, 0.719);
+}
+.article-div[b-zlo67wj70z] {
+    padding: 2% 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.article-div > div[b-zlo67wj70z] {
+    width: 50%;
+}
+.article-text-div[b-zlo67wj70z] {
+    position: relative;
+    margin-left: 5%;
+}
+.text-category[b-zlo67wj70z] {
+    text-align: justify;
+}
+
+/* Background of playlist collections */
+
+.\30[b-zlo67wj70z] {
+    background-color: #f5bc8ac9;
+}
+.\31[b-zlo67wj70z] {
+    background-color: #d82f29ab;
+}
+.\32[b-zlo67wj70z] {
+    background-color: #f77d37ab;
+}
+.Louis-San-\30[b-zlo67wj70z] {
+    background-color: #fa843fab;
+}
+.Louis-San-\31[b-zlo67wj70z] {
+    background-color: black;
+    color: rgba(245, 245, 245, 0.829);
+}
+.Louis-San-\32[b-zlo67wj70z] {
+    background-color: #11354d;
+    color: rgba(245, 245, 245, 0.829);
+}
+.Ichiban-Japan-\31[b-zlo67wj70z] {
+    background-color: #b1bda3;
+}
+.Tev-Ici-Japon-\30[b-zlo67wj70z] {
+    background-color: #d82f29ab;
+}
+.Tev-Ici-Japon-\31[b-zlo67wj70z] {
+    background-color: #93d2c8;
+}
+.Tev-Ici-Japon-\32[b-zlo67wj70z] {
+    color: rgba(245, 245, 245, 0.829);
+    background-color: #4b3526;
+}
+
+/* Media queries*/
+@media (max-width: 768px) {
+    .article-div[b-zlo67wj70z] {
+        flex-direction: column;
+    }
+    .article-div > div[b-zlo67wj70z] {
+        width: 100%;
+    }
+    .article-text-div[b-zlo67wj70z] {
+        transform: none;
+        top: auto;
+        margin-left: 0;
+        padding: 5% 0;
+    }
+    .carousel-control-next[b-zlo67wj70z], .carousel-control-prev[b-zlo67wj70z] {
+        width: 10%;
+    }
+  }
