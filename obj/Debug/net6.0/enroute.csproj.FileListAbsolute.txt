@@ -26,3 +26,8 @@ C:\Users\ccusg\Documents\Code\enroute\obj\Debug\net6.0\enroute.genruntimeconfig.
 C:\Users\ccusg\Documents\Code\enroute\obj\Debug\net6.0\ref\enroute.dll
 C:\Users\ccusg\Documents\Code\enroute\obj\Debug\net6.0\scopedcss\Pages\yt.cshtml.rz.scp.css
 C:\Users\ccusg\Documents\Code\enroute\obj\Debug\net6.0\scopedcss\Pages\Index.cshtml.rz.scp.css
+C:\Users\ccusg\Documents\Code\enroute\bin\Debug\net6.0\publish\web.config
+C:\Users\ccusg\Documents\Code\enroute\bin\Debug\net6.0\publish\appsettings.Development.json
+C:\Users\ccusg\Documents\Code\enroute\bin\Debug\net6.0\publish\appsettings.json
+C:\Users\ccusg\Documents\Code\enroute\bin\Debug\net6.0\publish\enroute.deps.json
+C:\Users\ccusg\Documents\Code\enroute\bin\Debug\net6.0\publish\enroute.runtimeconfig.json
