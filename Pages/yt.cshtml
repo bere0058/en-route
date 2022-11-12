@@ -3,10 +3,10 @@
 @{
     var ytName = RouteData.Values["youtuber"];
     ViewData["Title"] = ytName;
-    var ytIndex = Model.youtubers.FindIndex(i => i.getName() == ytName.ToString());
+    var ytIndex = Model.youtubers.FindIndex(i => i.name == ytName.ToString());
     var yt = Model.youtubers[ytIndex];
 
-    var fullImg = yt.getName() + ".jpg";
+    var fullImg = yt.name + ".jpg";
     var categoryId = 0;
     var active = ""; 
 }
@@ -28,7 +28,7 @@
                             @foreach (var link in Model.youtubers)
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" asp-page="/yt" class="" asp-route-youtuber=@link.getName()>@link.getName()</a>
+                                    <a class="nav-link text-white" asp-page="/yt" class="" asp-route-youtuber=@link.name>@link.name</a>
                                 </li>
                             }
                         </ul>
@@ -37,19 +37,19 @@
             </nav>
         </header>
         <div class="div-title d-flex flex-column align-items-center title-box">
-            <h1 class="display-2 my-5 fw-bold">@yt.getName()</h1>
-            <a class="url-btn my-5 p-3" href="@yt.getChanelUrl()">Visitez sa chaîn youtube</a>
+            <h1 class="display-2 my-5 fw-bold">@yt.name</h1>
+            <a class="url-btn my-5 p-3" href="@yt.chanelUrl">Visitez sa chaîn youtube</a>
         </div>
     </div>
 </section>
 <section class="content-section"> 
     <div class="d-flex flex-column justify-content-center p-5">
-        <p class="w-100 text-center mb-0">@yt.getIntro()</p>
+        <p class="w-100 text-center mb-0">@yt.intro</p>
         <p class="w-100 text-center mb-0">Vous trouverez ci-dessous les principales catégories de vidéos sur la chaîne</p>
     </div>
     <article id="carouselExampleControls" class="carousel slide" data-interval="false" data-bs-ride="carousel">
         <div class="carousel-inner">
-            @foreach (var category in yt.getCategories()) 
+            @foreach (var category in yt.categories) 
             {
                 if(categoryId == 0) 
                 {

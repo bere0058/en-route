@@ -10,12 +10,12 @@ public class Youtuber : PageModel
     {
         youtubers.Add
         (
-            new Youtubers
-            (
-                "Japania",
-                "https://www.youtube.com/c/JapaniaTV",
-                "Amine, (Japania), t'amène à découvrir le Japon depuis le point de vue des locaux et un ou un autre expatrié",
-                new List<Youtubers.videoCategories>()
+            new Youtubers()
+            {
+                name = "Japania",
+                chanelUrl = "https://www.youtube.com/c/JapaniaTV",
+                intro = "Amine, (Japania), t'amène à découvrir le Japon depuis le point de vue des locaux et un ou un autre expatrié",
+                categories = new List<Youtubers.videoCategories>()
                 {
                     new Youtubers.videoCategories()
                     {
@@ -39,16 +39,16 @@ public class Youtuber : PageModel
                         text = "Où et quand profiter de la neige au Japon ? Où se trouve la meillure piste cyclable du pais ? Et les mellieures Onsen ? Qu'est qu'il a à faire dans la region du Monte Fuji ? Pourquoi on devrait (absolument) visiter le centre du Japon ?" + "<br> <br>" + "Tokyo n'est pas le Japon! ou plutôt, ce n'est pas tout. Amine nous emmène à la découverte du Japon dehors de Tokyo. En passant par le nord, centre et sud du pais, Amine mange des repas délicieux, fait des rencontres inattendues et des experience inoubliables."
                     }
                 }
-            )
+            }
         );
         youtubers.Add
         (
-            new Youtubers
-            (
-                "Louis-San",
-                "https://www.youtube.com/c/LouisSan",
-                "Louis Zenjas (Louis-San), t'amène à découvrir le Japon depuis le point de vue d'un métis franco-japonais.",
-                new List<Youtubers.videoCategories>()
+            new Youtubers()
+            {
+                name = "Louis-San",
+                chanelUrl = "https://www.youtube.com/c/LouisSan",
+                intro = "Louis Zenjas (Louis-San), t'amène à découvrir le Japon depuis le point de vue d'un métis franco-japonais.",
+                categories = new List<Youtubers.videoCategories>()
                 {
                     new Youtubers.videoCategories()
                     {
@@ -72,16 +72,16 @@ public class Youtuber : PageModel
                         text = "Pourquoi Okinawa est si éspecial est différent du reste du Japon ? Quelles sont les activités incontournables à faire à Tokyo ? Quelles particuliarités les gens qui ont de tatouages au Japon ? À qoui ressemble une soirée avec une Geisha à Fukushima ?" + "<br> <br>" + "À le style des blogs, parfois à Tokyo, parfois dans les régions, Louis sors de son studio pour parfois nous emmèner à découvrir des éxperiences sur place et parfois pour interviewer à des gens qui vivent ou ont vécus d'autres tout aussi intéressentes"
                     }
                 }
-            )
+            }
         );
         youtubers.Add
         (
-            new Youtubers
-            (
-                "Ichiban-Japan",
-                "https://www.youtube.com/c/IchibanJapan",
-                "Guigui (Ichiban-Japan), t'amène à découvrir le Japon traditionnel à travers des aventures sur place en traitant des sujets passionants",
-                new List<Youtubers.videoCategories>()
+            new Youtubers()
+            {
+                name = "Ichiban-Japan",
+                chanelUrl = "https://www.youtube.com/c/IchibanJapan",
+                intro = "Guigui (Ichiban-Japan), t'amène à découvrir le Japon traditionnel à travers des aventures sur place en traitant des sujets passionants",
+                categories = new List<Youtubers.videoCategories>()
                 {
                     new Youtubers.videoCategories()
                     {
@@ -105,23 +105,23 @@ public class Youtuber : PageModel
                         text = "Pourquoi Okinawa est si éspecial est différent du reste du Japon ? Quelles sont les activités incontournables à faire à Tokyo ? Quelles particuliarités les gens qui ont de tatouages au Japon ? À qoui ressemble une soirée avec une Geisha à Fukushima ?" + "<br> <br>" + "À le style des blogs, parfois à Tokyo, parfois dans les régions, Louis sors de son studio pour parfois nous emmèner à découvrir des éxperiences sur place et parfois pour interviewer à des gens qui vivent ou ont vécus d'autres tout aussi intéressentes"
                     }
                 }
-            )
+            }
         );
         youtubers.Add
         (
-            new Youtubers
-            (
-                "Tev-Ici-Japon",
-                "https://www.youtube.com/user/IciJapon",
-                "Tev t'amène à découvrir le Japon depuis le point de vue d'un entrepreneur et vidéaste vivant au Japon depuis 2011",
-                new List<Youtubers.videoCategories>()
+            new Youtubers()
+            {
+                name = "Tev-Ici-Japon",
+                chanelUrl = "https://www.youtube.com/user/IciJapon",
+                intro = "Tev t'amène à découvrir le Japon depuis le point de vue d'un entrepreneur et vidéaste vivant au Japon depuis 2011",
+                categories = new List<Youtubers.videoCategories>()
                 {
                     new Youtubers.videoCategories()
                     {
                         title = "WTF Japan",
                         videoTitle = "Les Hosts (ne tombez pas dans le piège)",
                         videoSrc = "https://www.youtube.com/embed/rZoQEQ3yOYI?list=PLxCECXRIGBxpAky7N1e_j5VfD0-MjSNwi",
-                        text = "Qu'est-ce que est illégal au Japon mais pas au France ? Qu'est-ce que les japonais envie chez les étrangeres ? C'est quoi les love hôtels? Les maid café ? Être gros au Japon c'est illégal ? À quoi ressemble la journée dans la vie d'un chef de ramen ?" + "<br> <br>" + "Le Japon démystifié par quelqu'en de heritage japonais. Parfois sur place, parfois depuis son studio, parfois avec de français, parfois avec de japonaises, Louis nous parle de son coté japonais et des diverses realités du pais qui diffèrent à celles de la France "
+                        text = "Quelles sont les « pièges » des Host au Japon ? Quel est le côté sombre de la industrie des idoles ? Quelle image ont les japonais de l'alcool ? Qu'y a-t'il d'éspecial sur l'uniforme au Japon ? À quoi ressemblent les excentricités chez les politiciens japonais ?" + "<br> <br>" + "Tev il présente le côté wtf de Japon démystifié par quelqu'en de heritage japonais. Parfois sur place, parfois depuis son studio, parfois avec de français, parfois avec de japonaises, Louis nous parle de son coté japonais et des diverses realités du pais qui diffèrent à celles de la France "
                     },
                     new Youtubers.videoCategories()
                     {
@@ -138,7 +138,7 @@ public class Youtuber : PageModel
                         text = "Pourquoi Okinawa est si éspecial est différent du reste du Japon ? Quelles sont les activités incontournables à faire à Tokyo ? Quelles particuliarités les gens qui ont de tatouages au Japon ? À qoui ressemble une soirée avec une Geisha à Fukushima ?" + "<br> <br>" + "À le style des blogs, parfois à Tokyo, parfois dans les régions, Louis sors de son studio pour parfois nous emmèner à découvrir des éxperiences sur place et parfois pour interviewer à des gens qui vivent ou ont vécus d'autres tout aussi intéressentes"
                     }
                 }
-            )
+            }
         );
     }
 }
