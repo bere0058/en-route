@@ -1,8 +1,7 @@
 ﻿@page
-@model Youtuber
+@model YoutubersModel
 @{
     ViewData["Title"] = "Home page";
-    var jpg = ".jpg";
     var categoryId = 0;
     var active = "";
 }
@@ -26,9 +25,9 @@
                         {
                             active = "";
                         };
-                        <a asp-page="/yt" class="carousel-item @active" asp-route-youtuber="@Youtuber.name">
-                            <img class="w-100" src="/img/front/@Youtuber.name@jpg" alt="">
-                            <p class="w-50 position-absolute top-50 start-50 translate-middle bg-black bg-opacity-50 text-white">@Youtuber.name</p>
+                        <a asp-page="/yt" class="carousel-item @active" asp-route-ytName="@Youtuber.Name">
+                            <img class="w-100" src="/img/front/@(Youtuber.Name + ".jpg")" alt="">
+                            <p class="w-50 position-absolute top-50 start-50 translate-middle bg-black bg-opacity-50 text-white">@Youtuber.Name</p>
                         </a>
                         categoryId++;
                     }

@@ -1,17 +1,13 @@
-@page "{youtuber}"
+@page "{ytName}"
 @model Youtuber
 @{
-    var ytName = RouteData.Values["youtuber"];
-    ViewData["Title"] = ytName;
-    var ytIndex = Model.youtubers.FindIndex(i => i.name == ytName.ToString());
-    var yt = Model.youtubers[ytIndex];
+    ViewData["Title"] = Model.youtuber.Name;
 
-    var fullImg = yt.name + ".jpg";
     var categoryId = 0;
-    var active = ""; 
+    var active = "{youtuber}"; 
 }
 
-<section class="front-section" style="background-image: url(/img/full/@fullImg);">
+<section class="front-section" style="background-image: url(/img/full/@(Model.youtuber.Name + ".jpg"));">
     <div class="front-section bg-dark bg-opacity-50"  >
         <header>
             <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light mb-3">
@@ -25,10 +21,10 @@
                             <li class="nav-item">
                                 <a class="nav-link text-white fw-bold" asp-area="" asp-page="/Index">ACCUEIL</a>
                             </li>
-                            @foreach (var link in Model.youtubers)
+                            @foreach (var link in Model.youtubersList.getYoutubers())
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" asp-page="/yt" class="" asp-route-youtuber=@link.name>@link.name</a>
+                                    <a class="nav-link text-white" asp-page="/yt" class="" asp-route-ytName=@link.Name>@link.Name</a>
                                 </li>
                             }
                         </ul>
@@ -37,19 +33,19 @@
             </nav>
         </header>
         <div class="div-title d-flex flex-column align-items-center title-box">
-            <h1 class="display-2 my-5 fw-bold">@yt.name</h1>
-            <a class="url-btn my-5 p-3" href="@yt.chanelUrl">Visitez sa chaîn youtube</a>
+            <h1 class="display-2 my-5 fw-bold">@Model.youtuber.Name</h1>
+            <a class="url-btn my-5 p-3" href="@Model.youtuber.ChanelUrl">Visitez sa chaîn youtube</a>
         </div>
     </div>
 </section>
 <section class="content-section"> 
     <div class="d-flex flex-column justify-content-center p-5">
-        <p class="w-100 text-center mb-0">@yt.intro</p>
+        <p class="w-100 text-center mb-0">@Model.youtuber.Intro</p>
         <p class="w-100 text-center mb-0">Vous trouverez ci-dessous les principales catégories de vidéos sur la chaîne</p>
     </div>
     <article id="carouselExampleControls" class="carousel slide" data-interval="false" data-bs-ride="carousel">
         <div class="carousel-inner">
-            @foreach (var category in yt.categories) 
+            @foreach (var category in Model.youtuber.Categories) 
             {
                 if(categoryId == 0) 
                 {
@@ -58,13 +54,13 @@
                 {
                     active = "";
                 };
-                <div class="carousel-item @active @categoryId @ytName-@categoryId py-5">
+                <div class="carousel-item @active @categoryId @Model.youtuber.Name-@categoryId py-5">
                     <div class="d-flex article-div">
                         <div class="article-video-div">
-                            <iframe class="w-100" style="height: 100%;" src="@category.videoSrc" title="@category.videoTitle" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="w-100" style="height: 100%;" src="@category.videoSrc" title="@category.VideoTitle" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="article-text-div">
-                            <h4 class="text-center py-2">@category.title</h4>
+                            <h4 class="text-center py-2">@category.Title</h4>
                             <p class="text-category">@category.text</p>
                         </div>
                     </div>
